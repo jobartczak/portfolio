@@ -79,6 +79,13 @@ h1 {
   gap: 18px;
 }
 
+.gallery__link {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: block;
+}
+
 .gallery__item {
   position: relative;
   min-width: 0;
