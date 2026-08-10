@@ -257,11 +257,3 @@ h1 {
     transition-duration: 0.01ms !important;
   }
 }
-
-.gallery__link {
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  display: block;
-  cursor: pointer;
-}
