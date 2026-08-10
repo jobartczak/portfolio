@@ -79,13 +79,6 @@ h1 {
   gap: 18px;
 }
 
-.gallery__link {
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  display: block;
-}
-
 .gallery__item {
   position: relative;
   min-width: 0;
@@ -263,4 +256,12 @@ h1 {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+.gallery__link {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: block;
+  cursor: pointer;
 }
