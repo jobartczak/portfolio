@@ -75,7 +75,7 @@ h1 {
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-template-rows: repeat(2, clamp(260px, 31vw, 470px));
+  grid-template-rows: clamp(260px, 31vw, 470px);
   gap: 18px;
 }
 
