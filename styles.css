@@ -31,17 +31,18 @@ img {
 }
 
 .showcase {
-  width: min(100%, 1480px);
+  width: min(100% - 96px, 1480px);
   margin-inline: auto;
-  padding: 48px 64px 32px;
+  padding: 48px 0 32px;
 }
 
 .showcase__header {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.5fr);
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.6fr);
   align-items: end;
-  gap: 20px;
-  margin-bottom: 28px;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto 48px;
 }
 
 .eyebrow {
@@ -73,7 +74,7 @@ h3 {
 }
 
 .introduction {
-  max-width: 34ch;
+  max-width: 60ch;
   margin: 0 0 0.35rem;
   color: var(--muted);
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
@@ -191,15 +192,19 @@ h3 {
   text-transform: uppercase;
 }
 @media (max-width: 900px) {
-  .showcase {
+ .showcase {
     width: min(100% - 48px, 720px);
     padding: 40px 0 24px;
   }
 
-
   .showcase__header {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
+    margin-bottom: 36px;
+  }
+
+  .introduction {
+    max-width: 48ch;
   }
 
   .eyebrow {
