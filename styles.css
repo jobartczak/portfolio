@@ -46,7 +46,7 @@ img {
   max-width: none;
   margin: 24px 0 0;
   color: var(--muted);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
   font-size: clamp(1rem, 1.3vw, 1.2rem);
   line-height: 1.55;
 }
