@@ -241,15 +241,14 @@ h3 {
     font-size: clamp(4rem, 24vw, 6rem);
   }
 
- .gallery {
+  .gallery {
     grid-template-columns: 1fr;
-    grid-template-rows: none;
+    grid-template-rows: repeat(6, auto);
     gap: 12px;
   }
 
   .gallery__item {
     aspect-ratio: 1 / 1;
-    height: auto;
   }
 
   .gallery__item figcaption {
@@ -258,7 +257,7 @@ h3 {
     left: 18px;
   }
 
-   .site-footer {
+  .site-footer {
     margin-top: 48px;
   }
 }
