@@ -242,10 +242,14 @@ h3 {
   }
 
   .gallery {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 112vw);
-    gap: 12px;
-  }
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 12px;
+}
+
+.gallery__item {
+  aspect-ratio: 1 / 1;
+}
 
   .gallery__item figcaption {
     right: 18px;
