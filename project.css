@@ -52,7 +52,7 @@ body {
 
 .project__category {
   margin: 0 0 18px;
-  color: var(--accent);
+  color: var(--muted);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -163,13 +163,14 @@ body {
 }
 
 .project__navigation a:hover {
-  color: var(--accent);
+  color: var(--muted);
 }
 
 .site-footer {
   display: flex;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   margin-top: 64px;
   padding-top: 16px;
   border-top: 1px solid var(--line);
@@ -178,6 +179,11 @@ body {
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+
+.site-footer span:first-child::after {
+  content: "·";
+  margin-left: 10px;
 }
 
 @media (max-width: 700px) {
