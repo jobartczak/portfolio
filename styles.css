@@ -37,19 +37,18 @@ img {
 }
 
 .showcase__header {
-  display: block;
   width: min(100%, 1100px);
   margin: 0 auto 48px;
-  padding: 0 40px;
 }
 
+
 .eyebrow {
-  max-width: 34ch;
-  margin: 0 0 1rem;
+  max-width: none;
+  margin: 24px 0 0;
   color: var(--muted);
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   font-size: clamp(1rem, 1.3vw, 1.2rem);
-  line-height: 1.7;
+  line-height: 1.55;
 }
 
 h1 {
@@ -62,7 +61,7 @@ h1 {
 }
 
 h3 {
-  margin: 0 0 16px;
+  margin: 0 0 12px;
   font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
   font-size: clamp(1rem, 1.4vw, 1.4rem);
   font-weight: 500;
@@ -70,6 +69,7 @@ h3 {
   text-transform: uppercase;
   line-height: 1.2;
 }
+
 
 .introduction {
   max-width: none;
