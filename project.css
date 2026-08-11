@@ -145,6 +145,12 @@ body {
   border-radius: 24px;
 }
 
+.project__images img:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  width: calc((100% - 18px) / 2);
+  justify-self: center;
+}
+
 .project__navigation {
   display: flex;
   justify-content: space-between;
