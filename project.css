@@ -1,0 +1,205 @@
+```css
+:root {
+  --paper: #ffffff;
+  --ink: #252722;
+  --muted: #72776d;
+  --line: #dedfd9;
+  --accent: #b95737;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.project {
+  width: min(100% - 96px, 1280px);
+  margin: 0 auto;
+  padding: 40px 0 64px;
+}
+
+.project__header {
+  max-width: 900px;
+  margin: 0 auto 64px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 72px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 200ms ease;
+}
+
+.back-link:hover {
+  color: var(--ink);
+}
+
+.project__category {
+  margin: 0 0 18px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.project h1 {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(4rem, 9vw, 8rem);
+  font-weight: 400;
+  letter-spacing: -0.07em;
+  line-height: 0.85;
+}
+
+.project__intro {
+  max-width: 52ch;
+  margin: 32px 0 0;
+  color: var(--muted);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(1.1rem, 1.5vw, 1.35rem);
+  line-height: 1.55;
+}
+
+.project__hero {
+  width: 100%;
+  margin-bottom: 32px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.project__hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.project__info p {
+  margin: 0;
+}
+
+.project__info .label {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.project__text {
+  max-width: 680px;
+  margin: 96px auto;
+}
+
+.project__text h2 {
+  margin: 0 0 24px;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.project__text p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.project__images {
+  display: grid;
+  gap: 18px;
+}
+
+.project__images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+.project__navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.project__navigation a {
+  color: var(--ink);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.project__navigation a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 700px) {
+
+  .project {
+    width: min(100% - 32px, 600px);
+    padding-top: 28px;
+  }
+
+  .project__header {
+    margin-bottom: 40px;
+  }
+
+  .back-link {
+    margin-bottom: 48px;
+  }
+
+  .project__info {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project__text {
+    margin: 64px auto;
+  }
+
+  .project__hero,
+  .project__images img {
+    border-radius: 18px;
+  }
+
+  .project__navigation {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+}
+```
