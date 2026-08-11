@@ -32,7 +32,7 @@ body {
 
 .project__header {
   max-width: 900px;
-  margin: 0 auto 64px;
+  margin: 0 auto 40px;
 }
 
 .back-link {
@@ -79,10 +79,8 @@ body {
 }
 
 .project__hero {
-  width: 100%;
-  margin-bottom: 32px;
-  overflow: hidden;
-  border-radius: 24px;
+  max-width: 900px;
+  margin: 0 auto 40px;
 }
 
 .project__hero img {
@@ -95,6 +93,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
   padding: 24px 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -115,7 +115,7 @@ body {
 
 .project__text {
   max-width: 680px;
-  margin: 96px auto;
+  margin: 56px auto 72px;
 }
 
 .project__text h2 {
@@ -135,6 +135,7 @@ body {
 
 .project__images {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
